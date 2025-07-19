@@ -1,116 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="root.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="root.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <title>WeBuild.dev</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
       <!--  Navbar -->
-    <nav class="navbar">
-      <div class="nav-logo">WeBuild.dev</div>
-      <button title="button" class="hamburger" id="hamburger-btn">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+      <nav class="navbar">
+        <div class="nav-logo">WeBuild.dev</div>
+        <button title="button" class="hamburger" id="hamburger-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-        <div class="section1">
-            <div class="text1">
-                <div class="paraH">
-                   <h2>Welcome to webuild.dev</h2> <h5>where vision becomes a digital reality.</h5>
-                   
-                </div> 
-              <div>  
-               <h6>We specialize in building sleek, responsive websites that don’t just look good — they perform. Whether you're launching something new or upgrading your online presence, we’re here to build solutions that support your growth.</h6>
-              </div>
+      <!-- Hero Section -->
 
-            
-                <button class="connect-btn" type="button">Connect</button>
-            
-        </div>
-            <div class="img1">
-                <img src="Photos/Untitled design (1).svg" alt="">
-            </div>
-        </div>
-
-        <div class="section2">
-            <div class="text2">
-                <p>From concept to code — we make it real</p>
-                <span>Get Acquainted</span>
-                <p>Welcome to webuild.dev, a passionate web development studio dedicated to building clean, responsive, and high-performing websites. Based in Pakistan, we focus on creating modern landing pages, business websites, and custom web solutions using the latest front-end technologies. We stand out for our commitment to quality, attention to detail, and client-focused approach — ensuring every website we build not only looks great but also works flawlessly across all devices.</p>
-                 
-                 <button type="button" class="our-work-btn">Our Work</button>
-            </div>
-            <div class="img2">
-                <img src="Photos/Untitled design (2).svg" alt="">
-            </div>
-        </div>
-
-       <div class="container">
-          <div class="box">
-            <div class="icon"><i class="fas fa-wrench"></i></div>
-            <div class="title-crd">  Custom Development & Responsive Design</div>
-            <div class="subtitle-crd">Innovative Strategies</div>
+      <section class="hero-section">
+        <div class="text1">
+          <div class="paraH">
+            <h2>Welcome to webuild.dev</h2>
+            <h5>where vision becomes a digital reality.</h5>
           </div>
-          <div class="box">
-            <div class="icon"><i class="fas fa-chart-line"></i></div>
-            <div class="title-crd">Business Sites with Interactive Features</div>
-            <div class="subtitle-crd">Search Engine Boost</div>
+          <div>
+            <h6>
+              We specialize in building sleek, responsive websites that don’t
+              just look good — they perform. Whether you're launching something
+              new or upgrading your online presence, we’re here to build
+              solutions that support your growth.
+            </h6>
           </div>
+
+          <button class="connect-btn" type="button">Connect</button>
+        </div>
+        <div class="img1">
+          <img src="Photos/Untitled design (1).svg" alt="" />
+        </div>
+      </section>
+
+      <!-- About Section -->
+
+      <section class="about-section">
+        <div class="text2">
+          <p>From concept to code — we make it real</p>
+          <span>Get Acquainted</span>
+          <p>
+            Welcome to webuild.dev, a passionate web development studio
+            dedicated to building clean, responsive, and high-performing
+            websites. Based in Pakistan, we focus on creating modern landing
+            pages, business websites, and custom web solutions using the latest
+            front-end technologies. We stand out for our commitment to quality,
+            attention to detail, and client-focused approach — ensuring every
+            website we build not only looks great but also works flawlessly
+            across all devices.
+          </p>
+
+          <button type="button" class="our-work-btn">Our Work</button>
+        </div>
+        <div class="img2">
+          <img src="Photos/Untitled design (2).svg" alt="" />
+        </div>
+      </section>
+
+      <!-- Services Section -->
+
+      <section class="services-section">
+        <h2>Our Services</h2>
+        <div class="box-wrapper">
+          <!-- Card 1: Frontend Architecture & Design Systems -->
+          <div class="box">
+            <div class="icon"><i class="fas fa-pencil-ruler"></i></div>
+            <h4 class="box-title">Frontend Architecture & Design Systems</h4>
+            <p class="box-subtitle">
+              We architect scalable UIs and build modular design systems using
+              HTML, CSS, JavaScript, and component libraries like Tailwind and
+              Bootstrap.
+            </p>
+          </div>
+
+          <!-- Card 2: Interactive UI Development -->
+          <div class="box">
+            <div class="icon"><i class="fab fa-react"></i></div>
+            <h4 class="box-title">Interactive UI Development</h4>
+            <p class="box-subtitle">
+              Creating seamless and dynamic user experiences using React,
+              animations, and DOM manipulation — optimized for performance and
+              interactivity.
+            </p>
+          </div>
+
+          <!-- Card 3: Backend Systems & APIs -->
+          <div class="box">
+            <div class="icon"><i class="fas fa-server"></i></div>
+            <h4 class="box-title">Backend Systems & APIs</h4>
+            <p class="box-subtitle">
+              Robust backend architectures with Node.js, PHP, Express and REST
+              APIs — powering seamless data flow and secure integrations.
+            </p>
+          </div>
+
+          <!-- Card 4: CMS & WordPress Solutions -->
+          <div class="box">
+            <div class="icon"><i class="fab fa-wordpress"></i></div>
+            <h4 class="box-title">CMS & WordPress Solutions</h4>
+            <p class="box-subtitle">
+              We build, customize, and manage WordPress-based blogs, business
+              sites, WooCommerce stores, and admin dashboards.
+            </p>
+          </div>
+
+          <!-- Card 5: Databases & Cloud Integration -->
+          <div class="box">
+            <div class="icon"><i class="fas fa-database"></i></div>
+            <h4 class="box-title">Databases & Cloud Integration</h4>
+            <p class="box-subtitle">
+              Powering apps with PostgreSQL, MySQL, Supabase — and cloud
+              deployment solutions that scale with your business.
+            </p>
+          </div>
+
+          <!-- Card 6: AI, Chatbots & Integrations -->
           <div class="box">
             <div class="icon"><i class="fas fa-robot"></i></div>
-            <div class="title-crd"> Chatbot & AI Integration</div>
-            <div class="subtitle-crd">Audience Connection</div>
+            <h4 class="box-title">AI, Chatbots & Integrations</h4>
+            <p class="box-subtitle">
+              Smart features using AI SDKs, GPT/Gemini, chatbots, and business
+              tool integrations to automate and engage users.
+            </p>
           </div>
-          <div class="box">
-            <div class="icon"><i class="fas fa-laptop-code"></i></div>
-            <div class="title-crd"> WordPress Development</div>
-            <div class="subtitle-crd">Maximizing Returns</div>
+        </div>
+      </section>
+
+      <!-- Tech Stack section -->
+      <section class="tech-stack">
+        <h2 class="tech-title">Technologies I Work With</h2>
+
+        <!-- Frontend -->
+        <div class="tech-group">
+          <h3>Frontend</h3>
+          <div class="tech-icons">
+            <i class="fab fa-html5 html"></i> HTML5
+            <i class="fab fa-css3-alt css"></i> CSS3
+            <i class="fab fa-js-square js"></i> JavaScript
+            <i class="fab fa-react react"></i> React
+            <i class="fab fa-css3 tailwind"></i> Tailwind CSS
+            <i class="fab fa-bootstrap bootstrap"></i> Bootstrap
+            <i class="fab fa-font-awesome fa"></i> Font Awesome
+            <i class="fas fa-code jquery"></i> jQuery
           </div>
         </div>
 
+        <!-- Backend -->
+        <div class="tech-group">
+          <h3>Backend</h3>
+          <div class="tech-icons">
+            <i class="fab fa-node-js node"></i> Node.js
+            <i class="fas fa-server express"></i> Express.js
+            <i class="fab fa-php php"></i> PHP
+            <i class="fab fa-wordpress wordpress"></i> WordPress
+            <i class="fas fa-database postgres"></i> PostgreSQL
+            <i class="fas fa-database mysql"></i> MySQL
+            <i class="fas fa-cloud supabase"></i> Supabase
+          </div>
+        </div>
+
+        <!-- AI & Integrations -->
+        <div class="tech-group">
+          <h3>AI & Integrations</h3>
+          <div class="tech-icons">
+            <i class="fas fa-robot ai"></i> Chatbots
+            <i class="fas fa-brain sdk"></i> AI SDKs / APIs
+            <i class="fas fa-plug integrations"></i> 3rd Party Integrations
+          </div>
+        </div>
+
+        <!-- Tools & Infrastructure -->
+        <div class="tech-group">
+          <h3>Tools & Infrastructure</h3>
+          <div class="tech-icons">
+            <i class="fab fa-github github"></i> GitHub
+            <i class="fas fa-code-branch git"></i> Git
+            <i class="fas fa-code vscode"></i> VS Code
+            <i class="fas fa-terminal cpanel"></i> cPanel
+            <i class="fas fa-network-wired api"></i> REST API
+            <i class="fas fa-language i18n"></i> i18n / Multilingual
+            <i class="fas fa-cloud-sun whatsapp"></i> WhatsApp API
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
 
       <section class="projects-section">
-
-          <div class="projects-header">
-            <h1>Our Projects</h1>
+        <!-- Professional Projects -->
+        <h3 class="proj-category">Professional Work</h3>
+        <div class="projCards-Wrapper">
+          <div class="card">
+            <img
+              src="Photos/vecteezy_the-web-developer-team-is-building-a-smartphone-app-in-flat_.jpg"
+              alt="Professional Project"
+            />
+            <div class="card-description">
+              <h3>CRM Dashboard</h3>
+              <p class="tech-tools">
+                <span class="badge">PHP</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">Bootstrap</span>
+              </p>
+              <div class="card-links">
+                <a
+                  href="https://project1.example.com"
+                  target="_blank"
+                  class="visit-btn"
+                  >Visit Site</a
+                >
+              </div>
+            </div>
           </div>
 
-          <div class="cards-container">
-                  <div class="card">
-                    <img src="Photos/btw.avif" alt="Project 1">
-                    <div class="card-description">
-                      Collaborative workspace session planning.
-                    </div>
-                  </div>
-
-                  <div class="card">
-                    <img src="Photos/btw.avif" alt="Project 2">
-                    <div class="card-description">
-                      Team brainstorming new digital product ideas.
-                    </div>
-                  </div>
-
-                  <div class="card">
-                    <img src="Photos/btw.avif" alt="Project 3">
-                    <div class="card-description">
-                      Strategic corporate meeting in progress.
-                    </div>
-                  </div>
+          <div class="card">
+            <img
+              src="Photos/vecteezy_the-web-developer-team-is-building-a-smartphone-app-in-flat_.jpg"
+              alt="Professional Project"
+            />
+            <div class="card-description">
+              <h3>CRM Dashboard</h3>
+              <p class="tech-tools">
+                <span class="badge">PHP</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">Bootstrap</span>
+              </p>
+              <div class="card-links">
+                <a
+                  href="https://project1.example.com"
+                  target="_blank"
+                  class="visit-btn"
+                  >Visit Site</a
+                >
+              </div>
+            </div>
           </div>
+
+          <div class="card">
+            <img
+              src="Photos/vecteezy_the-web-developer-team-is-building-a-smartphone-app-in-flat_.jpg"
+              alt="Professional Project"
+            />
+            <div class="card-description">
+              <h3>CRM Dashboard</h3>
+              <p class="tech-tools">
+                <span class="badge">PHP</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">Bootstrap</span>
+              </p>
+              <div class="card-links">
+                <a
+                  href="https://project1.example.com"
+                  target="_blank"
+                  class="visit-btn"
+                  >Visit Site</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="Photos/vecteezy_the-web-developer-team-is-building-a-smartphone-app-in-flat_.jpg"
+              alt="Professional Project"
+            />
+            <div class="card-description">
+              <h3>CRM Dashboard</h3>
+              <p class="tech-tools">
+                <span class="badge">PHP</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">Bootstrap</span>
+              </p>
+              <div class="card-links">
+                <a
+                  href="https://project1.example.com"
+                  target="_blank"
+                  class="visit-btn"
+                  >Visit Site</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="Photos/vecteezy_the-web-developer-team-is-building-a-smartphone-app-in-flat_.jpg"
+              alt="Professional Project"
+            />
+            <div class="card-description">
+              <h3>CRM Dashboard</h3>
+              <p class="tech-tools">
+                <span class="badge">PHP</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">Bootstrap</span>
+              </p>
+              <div class="card-links">
+                <a
+                  href="https://project1.example.com"
+                  target="_blank"
+                  class="visit-btn"
+                  >Visit Site</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hobby Projects -->
+        <h3 class="proj-category">Hobby Projects</h3>
+        <div class="projCards-Wrapper">
+          <div class="card">
+            <img
+              src="Photos/vecteezy_the-web-developer-team-is-building-a-smartphone-app-in-flat_.jpg"
+              alt="Hobby Project"
+            />
+            <div class="card-description">
+              <h3>Chatbot Assistant</h3>
+              <p class="tech-tools">
+                <span class="badge">Node.js</span>
+                <span class="badge">Express</span>
+                <span class="badge">Gemini AI</span>
+              </p>
+              <div class="card-links">
+                <a
+                  href="https://chatbot.example.com"
+                  target="_blank"
+                  class="visit-btn"
+                  >Visit Site</a
+                >
+                <a
+                  href="https://github.com/yourname/chatbot"
+                  target="_blank"
+                  class="github-btn"
+                  >View GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="Photos/vecteezy_the-web-developer-team-is-building-a-smartphone-app-in-flat_.jpg"
+              alt="Hobby Project"
+            />
+            <div class="card-description">
+              <h3>Chatbot Assistant</h3>
+              <p class="tech-tools">
+                <span class="badge">Node.js</span>
+                <span class="badge">Express</span>
+                <span class="badge">Gemini AI</span>
+              </p>
+              <div class="card-links">
+                <a
+                  href="https://chatbot.example.com"
+                  target="_blank"
+                  class="visit-btn"
+                  >Visit Site</a
+                >
+                <a
+                  href="https://github.com/yourname/chatbot"
+                  target="_blank"
+                  class="github-btn"
+                  >View GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="Photos/vecteezy_the-web-developer-team-is-building-a-smartphone-app-in-flat_.jpg"
+              alt="Hobby Project"
+            />
+            <div class="card-description">
+              <h3>Chatbot Assistant</h3>
+              <p class="tech-tools">
+                <span class="badge">Node.js</span>
+                <span class="badge">Express</span>
+                <span class="badge">Gemini AI</span>
+              </p>
+              <div class="card-links">
+                <a
+                  href="https://chatbot.example.com"
+                  target="_blank"
+                  class="visit-btn"
+                  >Visit Site</a
+                >
+                <a
+                  href="https://github.com/yourname/chatbot"
+                  target="_blank"
+                  class="github-btn"
+                  >View GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="Photos/vecteezy_the-web-developer-team-is-building-a-smartphone-app-in-flat_.jpg"
+              alt="Hobby Project"
+            />
+            <div class="card-description">
+              <h3>Chatbot Assistant</h3>
+              <p class="tech-tools">
+                <span class="badge">Node.js</span>
+                <span class="badge">Express</span>
+                <span class="badge">Gemini AI</span>
+              </p>
+              <div class="card-links">
+                <a
+                  href="https://chatbot.example.com"
+                  target="_blank"
+                  class="visit-btn"
+                  >Visit Site</a
+                >
+                <a
+                  href="https://github.com/yourname/chatbot"
+                  target="_blank"
+                  class="github-btn"
+                  >View GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="Photos/vecteezy_the-web-developer-team-is-building-a-smartphone-app-in-flat_.jpg"
+              alt="Hobby Project"
+            />
+            <div class="card-description">
+              <h3>Chatbot Assistant</h3>
+              <p class="tech-tools">
+                <span class="badge">Node.js</span>
+                <span class="badge">Express</span>
+                <span class="badge">Gemini AI</span>
+              </p>
+              <div class="card-links">
+                <a
+                  href="https://chatbot.example.com"
+                  target="_blank"
+                  class="visit-btn"
+                  >Visit Site</a
+                >
+                <a
+                  href="https://github.com/yourname/chatbot"
+                  target="_blank"
+                  class="github-btn"
+                  >View GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <!-- Form Section -->
 
       <section class="form-container">
         <div class="form-content">
@@ -121,22 +486,22 @@
             <div class="form-g">
               <div class="form-group">
                 <label for="first-name">First name</label>
-                <input type="text" id="first-name" required>
+                <input type="text" id="first-name" required />
               </div>
               <div class="form-group">
                 <label for="last-name">Last name</label>
-                <input type="text" id="last-name" required>
+                <input type="text" id="last-name" required />
               </div>
             </div>
 
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" required>
+              <input type="email" id="email" required />
             </div>
 
             <div class="form-group">
               <label for="phone">Phone</label>
-              <input type="tel" id="phone">
+              <input type="tel" id="phone" />
             </div>
 
             <div class="form-group">
@@ -149,59 +514,52 @@
         </div>
       </section>
 
-    <!-- Footer -->
-    <div>
-    <footer class="custom-footer">
-  <div class="custom-footer-row">
-    <div class="footer-brand">
-      <h2>Hamza & Co.</h2>
-    </div>
+      <!-- Footer -->
+      <div>
+        <footer class="custom-footer">
+          <div class="custom-footer-row">
+            <div class="footer-brand">
+              <h2>Hamza & Co.</h2>
+            </div>
 
-    <div class="footer-social">
-      <ul>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">X</a></li>
-        <li><a href="#">LinkedIn</a></li>
-      </ul>
-    </div>
+            <div class="footer-social">
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">X</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </div>
 
-    <div class="footer-contact">
-      <p>123-456-7890</p>
-      <p>info@hamza.com</p>
-    </div>
+            <div class="footer-contact">
+              <p>123-456-7890</p>
+              <p>info@hamza.com</p>
+            </div>
 
-    <div class="footer-address">
-      <p>500 Terry Francine St.<br>San Francisco, CA 94158</p>
-    </div>
-  </div>
-</footer>
-    </div>
-
-
+            <div class="footer-address">
+              <p>500 Terry Francine St.<br />San Francisco, CA 94158</p>
+            </div>
+          </div>
+        </footer>
+      </div>
     </main>
-<script>
-  const hamburgerBtn = document.getElementById('hamburger-btn');
-  const navLinks = document.querySelector('.nav-links');
-  const navbar = document.querySelector('.navbar');
+    <script>
+      const hamburgerBtn = document.getElementById("hamburger-btn");
+      const navLinks = document.querySelector(".nav-links");
+      const navbar = document.querySelector(".navbar");
 
-  hamburgerBtn.addEventListener('click', () => {
-    hamburgerBtn.classList.toggle('active');
-    navLinks.classList.toggle('nav-active');
-    navbar.classList.toggle('nav-open');
+      hamburgerBtn.addEventListener("click", () => {
+        hamburgerBtn.classList.toggle("active");
+        navLinks.classList.toggle("nav-active");
+        navbar.classList.toggle("nav-open");
 
-    // Toggle body scroll
-    if (navLinks.classList.contains('nav-active')) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-  });
-</script>
-
-
-  
-   
-
-</body>
+        // Toggle body scroll
+        if (navLinks.classList.contains("nav-active")) {
+          document.body.style.overflow = "hidden";
+        } else {
+          document.body.style.overflow = "";
+        }
+      });
+    </script>
+  </body>
 </html>
