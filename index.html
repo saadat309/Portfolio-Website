@@ -1,32 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Primary Meta Tags -->
+    <title>WeBuildWeb — Custom Websites, Dashboards & Business Solutions</title>
+    <meta
+      name="title"
+      content="WeBuildWeb — Custom Websites, Dashboards & Business Solutions"
+    />
+    <meta
+      name="description"
+      content="We specialize in building responsive websites, admin panels, business dashboards, CMS systems, and modern frontend experiences — built for performance and scalability."
+    />
+
+    <!-- Responsive & Compatibility -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Keywords (broad and trending categories) -->
+    <meta
+      name="keywords"
+      content="web development, responsive website, business dashboard, admin panel, CMS development, website design, custom web apps, frontend developer, backend developer, wordpress development, web design, react, ui, ux, theme, plugins, chatbots, chat bots Ai tools, open ai api, ai sdk, whatsapp cloud api"
+    />
+
+    <!-- Author -->
+    <meta name="author" content="WeBuildWeb" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://webuildweb.dev/" />
+    <meta
+      property="og:title"
+      content="WeBuildWeb — Custom Websites, Dashboards & Business Solutions"
+    />
+    <meta
+      property="og:description"
+      content="Professional web development services focused on business websites, CMS platforms, and custom dashboards."
+    />
+    <meta
+      property="og:image"
+      content="https://webuildweb.dev/photos/Untitled design (1).svg"
+    />
+    <!-- Replace with actual image -->
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://webuildweb.dev/" />
+    <meta
+      name="twitter:title"
+      content="WeBuildWeb — Custom Websites, Dashboards & Business Solutions"
+    />
+    <meta
+      name="twitter:description"
+      content="We create responsive websites, CMS platforms, and dashboards for growing businesses — built with modern technologies."
+    />
+    <meta
+      name="twitter:image"
+      content="https://webuildweb.dev/photos/Untitled design (1).svg"
+    />
+    <!-- Replace with actual image -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="photos/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="root.css" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <title>WeBuildWeb</title>
   </head>
   <body>
     <main>
       <!--  Navbar -->
       <nav class="navbar">
-        <div class="nav-logo">WeBuildWeb</div>
-        <!-- <img src="photos/logo-black.svg" alt="WeBuildWeb logo"> -->
+        <div class="nav-logo">
+          <a href="http:/">
+          <img src="photos/logo-black.svg" alt="WeBuildWeb logo" />
+          </a>
+        </div>
         <button title="button" class="hamburger" id="hamburger-btn">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </button>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
 
@@ -35,19 +96,24 @@
       <section class="hero-section">
         <div class="text1">
           <div class="paraH">
-            <h2>Welcome to webuild.dev</h2>
-            <h5>where vision becomes a digital reality.</h5>
+            <h2 class="title">
+              <span class="welcome">Welcome to</span>
+              <span class="typing-words">WeBuildWeb</span>
+            </h2>
+            <p class="slogan">
+              <span>where vision becomes a digital reality.</span>
+            </p>
           </div>
           <div>
-            <h6>
-              We specialize in building sleek, responsive websites that don’t
-              just look good — they perform. Whether you're launching something
-              new or upgrading your online presence, we’re here to build
-              solutions that support your growth.
-            </h6>
+            We specialize in building sleek, responsive websites that don’t just
+            look good — they perform. Whether you're launching something new or
+            upgrading your online presence, we’re here to build solutions that
+            support your growth.
           </div>
 
-          <button class="connect-btn" type="button">Connect</button>
+          <button class="connect-btn" type="button" onclick="location.href='#Contact'">
+            Connect
+          </button>
         </div>
         <div class="img1">
           <img src="photos/Untitled design (1).svg" alt="" />
@@ -56,22 +122,23 @@
 
       <!-- About Section -->
 
-      <section class="about-section">
+      <section class="about-section" id="About">
         <div class="text2">
           <p>From concept to code — we make it real</p>
           <span>Get Acquainted</span>
           <p>
-            Welcome to webuild.dev, a passionate web development studio
-            dedicated to building clean, responsive, and high-performing
-            websites. Based in Pakistan, we focus on creating modern landing
-            pages, business websites, and custom web solutions using the latest
-            front-end technologies. We stand out for our commitment to quality,
-            attention to detail, and client-focused approach — ensuring every
-            website we build not only looks great but also works flawlessly
-            across all devices.
+            Welcome to WeBuildWeb, a passionate web development studio dedicated
+            to building clean, responsive, and high-performing websites. We focus on creating modern landing pages, business
+            websites, and custom web solutions using the latest front-end
+            technologies. We stand out for our commitment to quality, attention
+            to detail, and client-focused approach — ensuring every website we
+            build not only looks great but also works flawlessly across all
+            devices.
           </p>
 
-          <button type="button" class="our-work-btn">Our Work</button>
+          <button type="button" class="our-work-btn" onclick="location.href='#Portfolio'">
+            Our Work
+          </button>
         </div>
         <div class="img2">
           <img src="photos/Untitled design (2).svg" alt="" />
@@ -80,7 +147,7 @@
 
       <!-- Services Section -->
 
-      <section class="services-section">
+      <section class="services-section" id="Services">
         <h2>Our Services</h2>
         <div class="box-wrapper">
           <!-- Card 1: Frontend Architecture & Design Systems -->
@@ -149,20 +216,28 @@
 
       <!-- Tech Stack section -->
       <section class="tech-stack">
-        <h2 class="tech-title">Technologies I Work With</h2>
+        <h2 class="tech-title">Technologies We Work With</h2>
 
         <!-- Frontend -->
         <div class="tech-group">
           <h3>Frontend</h3>
           <div class="tech-icons">
-            <i class="fab fa-html5 html"></i> HTML5
-            <i class="fab fa-css3-alt css"></i> CSS3
-            <i class="fab fa-js-square js"></i> JavaScript
-            <i class="fab fa-react react"></i> React
-            <i class="fab fa-css3 tailwind"></i> Tailwind CSS
-            <i class="fab fa-bootstrap bootstrap"></i> Bootstrap
-            <i class="fab fa-font-awesome fa"></i> Font Awesome
-            <i class="fas fa-code jquery"></i> jQuery
+            <span class="badge"><i class="fab fa-html5 html"></i> HTML5</span>
+            <span class="badge"><i class="fab fa-css3-alt css"></i> CSS3</span>
+            <span class="badge"
+              ><i class="fab fa-js-square js"></i> JavaScript</span
+            >
+            <span class="badge"><i class="fab fa-react react"></i> React</span>
+            <span class="badge"
+              ><i class="fab fa-css3 tailwind"></i> Tailwind CSS</span
+            >
+            <span class="badge"
+              ><i class="fab fa-bootstrap bootstrap"></i> Bootstrap</span
+            >
+            <span class="badge"
+              ><i class="fab fa-font-awesome fa"></i> Font Awesome</span
+            >
+            <span class="badge"><i class="fas fa-code jquery"></i> jQuery</span>
           </div>
         </div>
 
@@ -170,13 +245,25 @@
         <div class="tech-group">
           <h3>Backend</h3>
           <div class="tech-icons">
-            <i class="fab fa-node-js node"></i> Node.js
-            <i class="fas fa-server express"></i> Express.js
-            <i class="fab fa-php php"></i> PHP
-            <i class="fab fa-wordpress wordpress"></i> WordPress
-            <i class="fas fa-database postgres"></i> PostgreSQL
-            <i class="fas fa-database mysql"></i> MySQL
-            <i class="fas fa-cloud supabase"></i> Supabase
+            <span class="badge"
+              ><i class="fab fa-node-js node"></i> Node.js</span
+            >
+            <span class="badge"
+              ><i class="fas fa-server express"></i> Express.js</span
+            >
+            <span class="badge"><i class="fab fa-php php"></i> PHP</span>
+            <span class="badge"
+              ><i class="fab fa-wordpress wordpress"></i> WordPress</span
+            >
+            <span class="badge"
+              ><i class="fas fa-database postgres"></i> PostgreSQL</span
+            >
+            <span class="badge"
+              ><i class="fas fa-database mysql"></i> MySQL</span
+            >
+            <span class="badge"
+              ><i class="fas fa-cloud supabase"></i> Supabase</span
+            >
           </div>
         </div>
 
@@ -184,9 +271,14 @@
         <div class="tech-group">
           <h3>AI & Integrations</h3>
           <div class="tech-icons">
-            <i class="fas fa-robot ai"></i> Chatbots
-            <i class="fas fa-brain sdk"></i> AI SDKs / APIs
-            <i class="fas fa-plug integrations"></i> 3rd Party Integrations
+            <span class="badge"><i class="fas fa-robot ai"></i> Chatbots</span>
+            <span class="badge"
+              ><i class="fas fa-brain sdk"></i> AI SDKs / APIs</span
+            >
+            <span class="badge"
+              ><i class="fas fa-plug integrations"></i> 3rd Party
+              Integrations</span
+            >
           </div>
         </div>
 
@@ -194,20 +286,34 @@
         <div class="tech-group">
           <h3>Tools & Infrastructure</h3>
           <div class="tech-icons">
-            <i class="fab fa-github github"></i> GitHub
-            <i class="fas fa-code-branch git"></i> Git
-            <i class="fas fa-code vscode"></i> VS Code
-            <i class="fas fa-terminal cpanel"></i> cPanel
-            <i class="fas fa-network-wired api"></i> REST API
-            <i class="fas fa-language i18n"></i> i18n / Multilingual
-            <i class="fas fa-cloud-sun whatsapp"></i> WhatsApp API
+            <span class="badge"
+              ><i class="fab fa-github github"></i> GitHub</span
+            >
+            <span class="badge"
+              ><i class="fas fa-code-branch git"></i> Git</span
+            >
+            <span class="badge"
+              ><i class="fas fa-code vscode"></i> VS Code</span
+            >
+            <span class="badge"
+              ><i class="fas fa-terminal cpanel"></i> cPanel</span
+            >
+            <span class="badge"
+              ><i class="fas fa-network-wired api"></i> REST API</span
+            >
+            <span class="badge"
+              ><i class="fas fa-language i18n"></i> i18n / Multilingual</span
+            >
+            <span class="badge"
+              ><i class="fas fa-cloud-sun whatsapp"></i> WhatsApp API</span
+            >
           </div>
         </div>
       </section>
 
       <!-- Projects Section -->
 
-      <section class="projects-section">
+      <section class="projects-section" id="Portfolio">
         <!-- Professional Projects -->
         <h3 class="proj-category">Professional Work</h3>
         <div class="projCards-Wrapper">
@@ -219,9 +325,11 @@
                 <span class="badge">PHP</span>
                 <span class="badge">MySQL</span>
                 <span class="badge">Bootstrap</span>
+                <span class="badge">jQuery</span>
+                <span class="badge">Font Awesome</span>
               </p>
               <div class="card-links">
-                <a href="www.arifrind.pk" target="_blank" class="visit-btn"
+                <a href="https://arifrind.pk" target="_blank" class="visit-btn"
                   >Visit Site</a
                 >
               </div>
@@ -239,10 +347,11 @@
                 <span class="badge">PHP</span>
                 <span class="badge">MySQL</span>
                 <span class="badge">Bootstrap</span>
+                <span class="badge">jQuery</span>
               </p>
               <div class="card-links">
                 <a
-                  href="www.drfatimaakhund.pk"
+                  href="https://drfatimaakhund.pk"
                   target="_blank"
                   class="visit-btn"
                   >Visit Site</a
@@ -257,16 +366,17 @@
               alt="Professional Project"
             />
             <div class="card-description">
-              <h3>CRM Dashboard</h3>
+              <h3>Multi User Dashboard</h3>
               <p class="tech-tools">
-                <span class="badge">JS</span>
+                <span class="badge">JavaScript</span>
                 <span class="badge">PHP</span>
                 <span class="badge">MySQL</span>
                 <span class="badge">Font Awesome</span>
                 <span class="badge">Google Fonts</span>
+                <span class="badge">jQuery</span>
               </p>
               <div class="card-links">
-                <a href="www.shareking.com" target="_blank" class="visit-btn"
+                <a href="https://shareking.pk" target="_blank" class="visit-btn"
                   >Visit Site</a
                 >
               </div>
@@ -274,14 +384,14 @@
           </div>
 
           <div class="card">
-            <img src="photos/poster-forestry.png" alt="Professional Project" />
+            <img src="photos/poster-forestry.webp" alt="Professional Project" />
             <div class="card-description">
               <h3>Forestry Blog</h3>
               <p class="tech-tools">
-                <span class="badge">HTML</span>
-                <span class="badge">JS</span>
+                <span class="badge">HTML5</span>
+                <span class="badge">CSS3</span>
+                <span class="badge">JavaScript</span>
                 <span class="badge">Bootstrap</span>
-                <span class="badge">CSS</span>
               </p>
               <div class="card-links">
                 <a href="#" target="_blank" class="visit-btn">Visit Site</a>
@@ -300,12 +410,10 @@
                 <span class="badge">PHP</span>
                 <span class="badge">MySQL</span>
                 <span class="badge">Bootstrap</span>
+                <span class="badge">jQuery</span>
               </p>
               <div class="card-links">
-                <a
-                  href="https://shareking.com"
-                  target="_blank"
-                  class="visit-btn"
+                <a href="https://shareking.pk" target="_blank" class="visit-btn"
                   >Visit Site</a
                 >
               </div>
@@ -317,8 +425,9 @@
             <div class="card-description">
               <h3>Health Blog</h3>
               <p class="tech-tools">
-                <span class="badge">PHP</span>
-                <span class="badge">MySQL</span>
+                <span class="badge">HTML5</span>
+                <span class="badge">CSS3</span>
+                <span class="badge">JavaScript</span>
                 <span class="badge">Bootstrap</span>
               </p>
               <div class="card-links">
@@ -334,7 +443,8 @@
         </div>
 
         <!-- Hobby Projects -->
-        <h3 class="proj-category">Hobby Projects</h3>
+
+        <!-- <h3 class="proj-category">Hobby Projects</h3>
         <div class="projCards-Wrapper">
           <div class="card">
             <img
@@ -479,12 +589,12 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
 
       <!-- Form Section -->
 
-      <section class="form-container">
+      <!-- <section class="form-container" id="Contact">
         <div class="form-content">
           <p class="subtitle">Ready to Elevate Your Brand?</p>
           <h1 class="title">Get in Touch</h1>
@@ -519,32 +629,77 @@
             <button type="submit" class="submit-btn">Submit</button>
           </form>
         </div>
-      </section>
+      </section> -->
 
       <!-- Footer -->
       <div>
         <footer class="custom-footer">
           <div class="custom-footer-row">
             <div class="footer-brand">
-              <h2>Hamza & Co.</h2>
+              <a href="/" aria-label="Home">
+                <img src="photos/logo-black.svg" alt="webuildweb logo" />
+              </a>
             </div>
 
-            <div class="footer-social">
+            <div class="footer-social" id="Contact">
               <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">X</a></li>
-                <li><a href="#">LinkedIn</a></li>
+                <li>
+                  <a
+                    href="https://wa.me/923145982936"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Chat with us on WhatsApp"
+                  >
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="www.linkedin.com/in/saadatyaseen"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit our LinkedIn"
+                  >
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/saadat309"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View our GitHub"
+                  >
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:webuildweb.dev@gmail.com"
+                    aria-label="Send us an email"
+                  >
+                    <i class="far fa-envelope"></i> Gmail
+                  </a>
+                </li>
               </ul>
             </div>
 
             <div class="footer-contact">
-              <p>123-456-7890</p>
-              <p>info@hamza.com</p>
-            </div>
-
-            <div class="footer-address">
-              <p>500 Terry Francine St.<br />San Francisco, CA 94158</p>
+              <p>
+                <a href="tel:+923145982936" aria-label="Call us" rel="nofollow">
+                  <i class="fas fa-phone-alt"></i> +92 314 5982936
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://webuildweb.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit our website"
+                >
+                  <i class="fas fa-globe"></i> webuildweb.dev
+                </a>
+              </p>
             </div>
           </div>
         </footer>
