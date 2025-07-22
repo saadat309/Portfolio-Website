@@ -1,8 +1,8 @@
 /* Reset defaults and use box-sizing globally */
 :root {
-  --primary-clr: #6d75e0; 
-  --secondary-clr: #ed9dd7; 
-  --light-clr: #ffffff; 
+  --primary-clr: #6d75e0;
+  --secondary-clr: #ed9dd7;
+  --light-clr: #ffffff;
   --gradiant-bg: linear-gradient(to right, #6d75e0, #ed9dd7);
   --bg-blur: rgba(255, 255, 255, 0.5);
 }
@@ -60,7 +60,7 @@ main {
 
 .nav-links a {
   text-decoration: none;
-  color: #545454; 
+  color: #545454;
   font-weight: 500;
   font-size: 1rem;
   position: relative;
@@ -74,7 +74,7 @@ main {
   bottom: -6px;
   width: 0%;
   height: 2px;
-  background-color: #545454; 
+  background-color: #545454;
   transition: width 0.3s ease;
 }
 
@@ -114,19 +114,18 @@ main {
   width: 50%;
   line-height: 1.15;
   letter-spacing: 2px;
-  
 }
 .paraH {
   display: flex;
   flex-direction: column;
   font-family: "Courier New", Courier, monospace;
   gap: 0.5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2rem 0;
 }
-.title{
-display: flex;
-align-items: center;
-gap: 0.5rem;
+.title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 .title .welcome {
   font-size: 1rem;
@@ -144,24 +143,33 @@ gap: 0.5rem;
   width: 0;
 
   /* Gradient text setup */
-  background: linear-gradient(270deg, rgb(255, 107, 0), rgb(255, 174, 0), rgb(255, 107, 0));
+  background: linear-gradient(
+    270deg,
+    rgb(255, 107, 0),
+    rgb(255, 174, 0),
+    rgb(255, 107, 0)
+  );
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation:
-    typing 2s steps(10) forwards,
-    blink 1s step-end infinite,
+  animation: typing 2s steps(10) forwards, blink 1s step-end infinite,
     gradientFlow 5s ease infinite;
   border-right: 2px solid rgb(255, 107, 0); /* blinking cursor */
 }
 
 @keyframes typing {
-  from { width: 0; }
-  to { width: 12ch; }
+  from {
+    width: 0;
+  }
+  to {
+    width: 12ch;
+  }
 }
 
 @keyframes blink {
-  50% { border-color: transparent; }
+  50% {
+    border-color: transparent;
+  }
 }
 
 .slogan {
@@ -177,8 +185,6 @@ gap: 0.5rem;
   color: rgb(255 107 0);
 }
 
-
-
 .text1 .connect-btn {
   color: white;
   font-size: 18px;
@@ -187,7 +193,6 @@ gap: 0.5rem;
   width: fit-content;
   border-radius: 25px;
 }
-
 
 .hero-section .img1 {
   display: flex;
@@ -290,7 +295,7 @@ gap: 0.5rem;
     max-width: 280px;
   }
 
-    .slogan {
+  .slogan {
     font-size: 0.75rem;
   }
 
@@ -424,7 +429,7 @@ gap: 0.5rem;
 
 /* === Enhanced Tech Stack Section === */
 .tech-stack {
- background: linear-gradient(to right, #3e647e, #8673ca); /* NEW: blue-purple tones */
+  background: linear-gradient(to right, #3e647e, #8673ca);
   border-radius: 20px;
   padding: 3rem 1.5rem;
   margin: 3rem auto;
@@ -492,36 +497,85 @@ gap: 0.5rem;
   }
 }
 
-
 /* Individual Tech Icon Colors */
-.html { color: #e34c26; }
-.css { color: #2965f1; }
-.js { color: #f0db4f; }
-.react { color: #61dafb; }
-.bootstrap { color: #7952b3; }
-.tailwind { color: #38bdf8; }
-.fa { color: #339af0; }
-.jquery { color: #f7df1e; }
+.html {
+  color: #e34c26;
+}
+.css {
+  color: #2965f1;
+}
+.js {
+  color: #f0db4f;
+}
+.react {
+  color: #61dafb;
+}
+.bootstrap {
+  color: #7952b3;
+}
+.tailwind {
+  color: #38bdf8;
+}
+.fa {
+  color: #339af0;
+}
+.jquery {
+  color: #f7df1e;
+}
 
-.php { color: #8993be; }
-.node { color: #68a063; }
-.express { color: #333; }
-.postgres { color: #336791; }
-.mysql { color: #00758F; }
-.supabase { color: #3ecf8e; }
-.wordpress { color: #21759b; }
+.php {
+  color: #8993be;
+}
+.node {
+  color: #68a063;
+}
+.express {
+  color: #333;
+}
+.postgres {
+  color: #336791;
+}
+.mysql {
+  color: #00758f;
+}
+.supabase {
+  color: #3ecf8e;
+}
+.wordpress {
+  color: #21759b;
+}
 
-.ai { color: #9b59b6; }
-.sdk { color: #e67e22; }
-.integrations { color: #2ecc71; }
+.ai {
+  color: #9b59b6;
+}
+.sdk {
+  color: #e67e22;
+}
+.integrations {
+  color: #2ecc71;
+}
 
-.github { color: #171515; }
-.cpanel { color: #4e4e4e; }
-.git { color: #6e5494; }
-.vscode { color: #007acc; }
-.api { color: #4a90e2; }
-.i18n { color: #ff9f00; }
-.whatsapp { color: #128c7e; }
+.github {
+  color: #171515;
+}
+.cpanel {
+  color: #4e4e4e;
+}
+.git {
+  color: #6e5494;
+}
+.vscode {
+  color: #007acc;
+}
+.api {
+  color: #4a90e2;
+}
+.i18n {
+  color: #ff9f00;
+}
+.whatsapp {
+  color: #128c7e;
+}
 
 /* ------projects sections---- */
 
@@ -550,11 +604,10 @@ gap: 0.5rem;
 }
 
 .card {
-  flex: 1 1 calc(33% - 1rem); 
-  max-width: 320px;
+  flex: 1 1 calc(33.333% - 1rem);
+  max-width: 350px;
+  height: auto;
   background: linear-gradient(to right, var(--primary-clr), #85d5fb);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 6px 18px rgba(109, 117, 224, 0.15);
@@ -572,7 +625,7 @@ gap: 0.5rem;
 
 .card img {
   width: 100%;
-  height: 200px;
+  height: auto;
   object-fit: cover;
   border-bottom: 3px solid white;
 }
@@ -601,7 +654,7 @@ gap: 0.5rem;
 
 .badge {
   display: inline-block;
-  background: white; /* very light for visibility */
+  background: white;
   color: #545454;
   padding: 0.3rem 0.6rem;
   margin: 0.2rem 0.2rem 0 0;
@@ -630,11 +683,9 @@ gap: 0.5rem;
   transition: background 0.3s ease;
 }
 
-
-
 @media (max-width: 768px) {
   .card {
-    flex: 1 1 350px;
+    flex: 1 1 100%;
   }
 }
 
@@ -744,7 +795,6 @@ gap: 0.5rem;
   flex-wrap: wrap;
 }
 
-
 .footer-social ul {
   list-style: none;
   padding: 0;
@@ -761,7 +811,6 @@ gap: 0.5rem;
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
 
 .footer-contact p {
   margin: 0.4rem 0;
@@ -806,7 +855,6 @@ gap: 0.5rem;
     text-align: center;
   }
 
-
   .about-section .text2,
   .about-section .img2 {
     width: 100%;
@@ -834,8 +882,6 @@ gap: 0.5rem;
   span {
     font-size: 1rem;
   }
-
-
 
   .img2 img {
     width: 100%;
@@ -945,15 +991,18 @@ gap: 0.5rem;
   }
 }
 
-
 .animated-btn,
 .connect-btn,
 .our-work-btn,
 .visit-btn,
 .github-btn,
 .submit-btn {
-  
-  background: linear-gradient(270deg, rgb(255, 107, 0), rgb(255, 174, 0), rgb(255, 107, 0));
+  background: linear-gradient(
+    270deg,
+    rgb(255, 107, 0),
+    rgb(255, 174, 0),
+    rgb(255, 107, 0)
+  );
   background-size: 400% 400%;
   color: white;
   border: none;
@@ -961,7 +1010,7 @@ gap: 0.5rem;
   border-radius: 25px;
   font-size: 1rem;
   font-weight: bold;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
   animation: gradientFlow 6s ease infinite;
   box-shadow: 0 4px 15px rgba(109, 117, 224, 0.2);
 }
@@ -972,12 +1021,18 @@ gap: 0.5rem;
 .visit-btn:hover,
 .github-btn:hover,
 .submit-btn:hover {
-  transform: translateY(-3px);
+  transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(109, 117, 224, 0.3);
   cursor: pointer;
 }
 @keyframes gradientFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
